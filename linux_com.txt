@@ -1,0 +1,33 @@
+#Raisa
+#20BCAB09
+#Linux basic 
+#lists all the files or directories present
+ls
+#ascending order of bit based on time stamp (list recursive time append)
+ls -lrta
+#to create directory
+mkdir sjc
+#to change directory
+cd sjc
+#to come out of the present directory
+cd ..
+#frequently used editor in linux is vi
+vi sample.txt
+#esc, :wq (save the file)
+#esc, :q! (quit without saving)
+#to veiw what we have writte in the file
+cat sample.txt
+#present working directory
+pwd
+#change mod
+chmod 754 sample.txt
+#copy file from one directory to current directory
+cp /root/sjc/sample.txt /root/sjc1
+#move file from one directory to current directory
+mv /root/sjc/sample.txt /root/sjc1
+#to create 0 kb file 
+touch a.txt
+#to remove a file
+rm sample.txt
+#to remove directory
+rm -r -f sjc
