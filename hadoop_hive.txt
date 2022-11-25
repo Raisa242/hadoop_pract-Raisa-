@@ -1,0 +1,17 @@
+#Raisa
+#20BCAB09
+#Hive commands
+[cloudera@quickstart ~]$ hive
+#to show databases present
+hive> show databases;
+3 create anew database
+hive> create database if not exists Bdata;
+hive> create table if not exists emp(eid int, ename string, epos string, esal int, ecom int, edpno int) row format delimited fields terminated by ',';
+hive> describe emp;
+hive> load data local inpath '/home/cloudera/Desktop/emp.csv' into table emp;
+hive> select * from emp;
+hive> create external table tb(empno int, ename string, sal float, comm float, dpno int) row format delimited fields terminated by ',';                                   
+hive> load data local inpath '/home/cloudera/Desktop/emp.csv' into table tb;
+hive> show tables;
+hive> describe tb;
+hive> slect * from tb;
